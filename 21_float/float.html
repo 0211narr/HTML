@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> float </title>
+
+    <style>
+        
+        p {
+            width: 350px;
+            border: 1px solid darkgray;
+            padding: 28px;
+            clear: both;
+            /* clear는 float의 속성을 없애주는 효과 
+                겹쳐있는게 떨어짐
+                float이 있으면 clear도 같이 있음 무조건
+            */
+        }
+        
+        p:first-letter {
+            font-size: 80px;
+            padding: 18px;
+            background-color: darkseagreen;
+            margin-right: 18px;
+            float: left;
+        }
+                
+        ul {
+            padding: 0;
+            list-style: none;
+            border: 5px dashed darkgray;
+        }
+        
+        ul:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        ul li {
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            background-color: gold;
+            float: right;
+        }
+        
+        
+        
+    </style>
+
+</head>
+
+<body>
+    
+    <ul>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+    </ul>
+    
+    <hr>
+
+    <p>뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨뀨ros donec ac odio tempor orci dapibus. Tellus integer feugiat scelerisque varius morbi enim nunc. Nunc aliquet bibendum enim facilisis gravida neque convallis a cras. Purus in massa tempor nec feugiat nisl 후루꾸十卞丁下下丁卞十꾸루후으工工으후루꾸十卞丁下 Egestas tellus rutrum tellus pellentesque eu tincidunt. Velit ut tortor pretium viverra. Diam vulputate ut pharetra sit amet aliquam id.</p>
+
+</body>
+
+</html>
