@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Form </title>
+    
+    <style>
+        * {user-select: none;} /*드래그할때 영역이 선택되는 현상 방지*/
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend>입력폼 연습</legend>
+            
+            <ul>
+                <li>
+                    <label for="userId">ID</label>
+                    <input type="text" id="userId" maxlength="10" value="" placeholder="아이디 입력">
+                    <!--placeholder=안내텍스트-->
+                </li>
+                
+                <li>
+                    <label for="userPw">PW</label>
+                    <input type="password" id="userPw">
+                    <input type="hidden" value="감춰진 값">
+                </li>
+                
+                <li>
+                    <label for="cnt">수량</label>
+                    <input type="number" id="cnt" value="1" min="1" max="10" step="1">
+                    <!--step=증감 수-->
+                    <input type="range" value="1" min="1" max="10" step="1">
+                </li>
+                
+                <li>
+                    <label for="search">검색</label>
+                    <input type="search" id="search">
+                    <!--사용 잘 안함-->
+                </li>
+                
+                <li>
+                    <label for="page">홈페이지 주소</label>
+                    <input type="url" id="page">
+                </li>
+                
+                <li>
+                    <label for="mail">이메일</label>
+                    <input type="email" id="mail">
+                </li>
+                
+                <li>
+                    <input type="color">
+                </li>
+                
+                <li>
+                    <input type="checkbox" id="chk1" name="chkGroup">
+                    <label for="chk1">롤</label>
+                    <!--checkbox는 id랑 name 필수-->
+                    
+                    <input type="checkbox" id="chk2" name="chkGroup">
+                    <label for="chk2">배그</label>
+                    
+                    <input type="checkbox" id="chk3" name="chkGroup">
+                    <label for="chk3">데스티니</label>
+                </li>
+                
+                <li>
+                    <input type="radio" id="rdo1" name="rdoGroup">
+                    <label for="rdo1">좋다</label>
+                    
+                    <input type="radio" id="rdo2" name="rdoGroup">
+                    <label for="rdo2">너무좋다</label>
+                    
+                    <input type="radio" id="rdo3" name="rdoGroup" checked>
+                    <label for="rdo3">개좋다</label>
+                    <!--checked 미리 체크표시 넣음-->
+                </li>
+                
+                <li>
+                    <label for="area">지역</label>
+                    <select id="area">
+                        <option value="1">인천</option>
+                        <option value="2">강원</option>
+                        <option value="3">부산</option>
+                    </select>
+                </li>
+                
+                <li>
+                    <label for="userTel">연락처</label>
+                    <input type="tel" id="userTel">
+                </li>
+                
+                <li>
+                    <label for="memo">메모</label>
+                    <textarea rows="5" cols="50"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        
+        <input type="submit" value="확인">
+        <input type="reset" value="초기화">
+        <input type="file">
+        <input type="button" value="버튼">
+        <input type="image" src="images/btn_ok.jpg" alt="ok">
+        
+    </form>
+
+
+
+
+
+</body>
+
+</html>

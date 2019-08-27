@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+
+    <style>
+        div {
+            background: url(images/image.png);
+            width: 180px;
+            height: 180px;
+            margin: 150px auto;
+        }
+
+        .box1 {
+            transform: scaleX(1.8);
+        }
+
+        .box2 {
+            transform-origin: left bottom;/* 중심 축 설정 */
+            transform: rotate(45deg);
+        }
+
+        .box3 {
+            transform: skewY(30deg);
+            /* skew:기울기. 0~90도 사이의 값. 안에 있는 내용까지 기울어짐 */
+        }
+        
+        .box4 {
+            transform: translate(0px, 0px);
+            /* translate:좌표 */
+        }
+        
+        ul {
+            list-style: none;
+        }
+
+        ul:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        ul li {
+            width: 100px;
+            height: 40px;
+            background-color: pink;
+            float: left;
+            text-align: center;
+            line-height: 40px;
+            transform: skewX(40deg);
+        }
+
+        ul li a {
+            color: aliceblue;
+            text-decoration: none;
+            display: block;
+            transform: skewX(-40deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="#">MENU1</a></li>
+        <li><a href="#">MENU2</a></li>
+        <li><a href="#">MENU3</a></li>
+        <li><a href="#">MENU4</a></li>
+    </ul>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">기울기</div>
+    <div class="box4"></div>
+
+</body>
+</html>

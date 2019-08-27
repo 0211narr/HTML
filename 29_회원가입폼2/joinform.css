@@ -1,0 +1,66 @@
+#wrap {
+    width: 863px;
+    margin: 30px auto;
+}
+
+#wrap h3 {
+    font-size: 14px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #ccc;
+    color: #555;
+}
+
+#wrap form fieldset {
+    border: 1px solid #a3a3a3;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+#wrap form fieldset legend {
+    display: none;
+}
+
+#wrap form fieldset ul {
+    list-style: none;
+}
+
+#wrap form fieldset ul li {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+#wrap form fieldset ul li label {
+    width: 125px;
+    height: 30px;
+    float: left;
+    font-weight: 700;
+}
+
+#wrap form fieldset ul li input[maxlength="4"] , 
+#wrap form fieldset ul li input[maxlength="3"] {
+    width: 40px;
+}
+
+#wrap form fieldset ul li input[type="image"] {
+    vertical-align: bottom;
+}
+
+select {
+    height: 21px;
+}
+
+#post {
+    width: 70px;
+}
+
+#address {
+    width: 200px;
+}
+
+#email {
+    width: 120px;
+}
+
+#wrap form div {
+    text-align: center;
+}

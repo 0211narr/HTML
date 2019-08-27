@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+
+    <style>
+
+        div {
+            width: 300px;
+            margin: 50px auto;
+            padding: 7px;
+            box-shadow: 0 0 15px #b3f0b3;
+        }
+        
+        h2 {
+            margin: 0;
+            padding: 10px 15px;
+            font-size: 20px;
+            background-color: darkseagreen;
+            color: aliceblue;
+        }
+        
+        form {
+            padding: 15px;
+        }
+        
+        form ul {
+            padding: 0;
+            list-style: none;
+        }
+        
+        form ul li {
+            margin: 15px 0;
+        }
+        
+        form ul li label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: darkgreen;
+        }
+        
+        form ul li input ,
+        form ul li a {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid #8d8d8d;
+        }
+        
+        form ul li:last-child {
+            padding-top: 15px;
+        }
+        
+        form ul li:last-child input ,
+        form ul li:last-child a {
+            display: block;
+            background-color: darkseagreen;
+            text-align: center;
+            margin: 5px;
+            font-size: 14px;
+            color: aliceblue;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        form ul li:last-child input {
+            background-color: #478d47;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+
+        <h2>회원가입</h2>
+
+        <form>
+            <ul>
+                <li>
+                    <label for="userId">ID</label>
+                    <input type="text" id="userId" placeholder="아이디">
+                </li>
+
+                <li>
+                    <label for="userPw">PASSWORD</label>
+                    <input type="password" id="userPw" placeholder="비밀번호">
+                </li>
+
+                <li>
+                    <label for="userRpw">CONFIM PASSWORD</label>
+                    <input type="password" id="userRpw" placeholder="비밀번호 재입력">
+                </li>
+
+                <li>
+                    <label for="userMail">EMAIL ADDRESS</label>
+                    <input type="email" id="userMail" placeholder="이메일 주소">
+                </li>
+
+                <li>
+                    <input type="submit" value="회원가입">
+                    <a href="#">아이디 찾기</a>
+                    <a href="#">비밀번호 찾기</a>
+                </li>
+            </ul>
+        </form>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

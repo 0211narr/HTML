@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+
+    <style>
+        
+        html, body, section {
+            height: 100%;
+        }
+        
+        body, h1 {
+            margin: 0;
+        }
+        
+        header {
+            width: 762px;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            /* top,right,bottom,left 값을 줘야 margin:auto를 줬을때 가운데로 감. */
+        }
+        
+        header nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        header nav ul li {
+            float: left;
+            padding: 0 13px;
+            font-size: 20px;
+            height: 121px;
+            line-height: 121px;
+        }
+        
+        header nav ul li:nth-child(4) {
+            line-height: 0;
+        }
+        
+        header nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: 900;
+        }
+        
+        section {
+            background: url(images/bg.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        
+        footer {
+            background-color: rgb(0, 0, 0, 0.5);
+            color: aliceblue;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">MAIN1</a></li>
+                    <li><a href="#">MAIN2</a></li>
+                    <li><a href="#">MAIN3</a></li>
+                    <li><a href="#">
+                            <h1><img src="images/logo.png" alt="heineken"></h1>
+                        </a></li>
+                    <li><a href="#">MAIN4</a></li>
+                    <li><a href="#">MAIN5</a></li>
+                    <li><a href="#">MAIN6</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section>
+        </section>
+
+        <footer>
+            <p>Copyrights &copy; All Rights Reserved.</p>
+        </footer>
+        
+
+
+
+</body></html>
