@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+
+    <style>
+        /* li { color: green; } */
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* 컬러값을 inherit(상속)으로 지정하면 부모로부터 컬러 상속받음*/
+
+        nav>ul>li>a { color: limegreen; }
+        
+        
+        
+        div > p { color: orange; }
+        body > p { color: deepskyblue; }
+        body > dl dd { color: hotpink; }
+        
+        
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Menu1</a>
+                <ul>
+                    <li><a href="#">sub-menu1</a></li>
+                    <li><a href="#">sub-menu2</a></li>
+                    <li><a href="#">sub-menu3</a></li>
+                    <li><a href="#">sub-menu4</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Menu2</a>
+                <ul>
+                    <li><a href="#">sub-menu1</a></li>
+                    <li><a href="#">sub-menu2</a></li>
+                    <li><a href="#">sub-menu3</a></li>
+                    <li><a href="#">sub-menu4</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Menu3</a>
+                <ul>
+                    <li><a href="#">sub-menu1</a></li>
+                    <li><a href="#">sub-menu2</a></li>
+                    <li><a href="#">sub-menu3</a></li>
+                    <li><a href="#">sub-menu4</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Menu4</a>
+                <ul>
+                    <li><a href="#">sub-menu1</a></li>
+                    <li><a href="#">sub-menu2</a></li>
+                    <li><a href="#">sub-menu3</a></li>
+                    <li><a href="#">sub-menu4</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+
+    <div>
+        <p>자손 선택자와 후손 선택자</p>
+        <dl>
+            <dt>제목1</dt>
+            <dd>내용1</dd>
+            <dd>내용2</dd>
+        </dl>
+    </div>
+
+    <p>자손 선택자와 후손 선택자</p>
+    <dl>
+        <dt>제목2</dt>
+        <dd>내용3</dd>
+        <dd>내용4</dd>
+    </dl>
+
+
+
+
+
+
+
+</body>
+</html>

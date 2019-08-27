@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+	
+	<style>
+        
+        /*
+            id와 class 생성규칙
+        
+          - 영문, 숫자, -, _ 등의 문자를 사용하여 생성 (한글X, 특수문자X, 공백X)
+          - 첫 글자는 반드시 영문자를 사용
+          - ID는 한페이지 내에서 중복된 이름을 사용할 수 없다.
+          - CLASS는 한 페이지 내에서 같은 이름의 CLASS를 여러번 사용할 수 있고,
+            하나의 태그에 여러개의 CLASS 지정 가능.
+        
+        
+          - 이름에 의미를 부여 ( 이름만 봐도 어떤 것인지 알 수 있도록 작성 )
+          - 태그의 이름, 속성의 이름, 속성값 등을 피해서 작성한다.
+             (여러 단어를 조합하거나 단어를 줄여서 중복을 피한다.)
+          - 여러단어를 조합하여 만들 경우 단어간 구분을 짓는다. 
+             (ex.   getid->  getId / get_id )
+        
+        */
+        
+        #test { color: #228b22; }
+        
+        .txt { text-decoration: line-through; color: darkorange; }
+        
+        .cls { color: #ff69b4; }
+        
+       /*   우선순위:  id > class > tag  
+             나중에 쓴게 적용됨  */
+    
+
+    </style>
+	
+	
+	
+	
+</head>
+
+
+<body>
+
+    <h2 id="test">LOREM IPSUM</h2>
+    <p class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque purus semper eget duis.</p>
+    
+    <h2 id="test2">LOREM IPSUM</h2>
+    <p class="cls">Tempor id eu nisl nunc. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Eu ultrices vitae auctor eu. Ut morbi tincidunt augue interdum velit euismod in pellentesque.</p>
+    
+    <h2 id="test3" class="txt cls">LOREM IPSUM</h2>
+    <p>Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Ac turpis egestas maecenas pharetra convallis posuere morbi.</p>
+ 
+
+
+
+
+
+
+</body>
+</html>
