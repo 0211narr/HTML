@@ -1,0 +1,70 @@
+body {
+    background-image: url(../images/background2.gif);
+    font-family: Arial;
+}
+
+#wrap {
+    width: 800px;
+    margin: 50px auto;
+}
+
+header {
+    background-color: #685d48;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+aside {
+    width: 300px;
+    padding: 10px 50px;
+    background-image: url(../images/background.gif);
+    box-sizing: border-box;
+    /* 패딩이나 보더값으로 인해 사이즈가 변하는걸 방지함 */
+    float: right;
+}
+
+aside h2 {
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
+    /* 한 줄의 높이. 글자크기보다 커야함 */
+}
+
+aside h2 span {
+    color: brown;
+}
+
+section {
+    background-image: url(../images/background.gif);
+    margin-right: 320px;
+    padding: 10px 20px;
+}
+
+section h2 {
+    font-size: 16px;
+    color: brown;
+}
+
+section p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+section p a {
+    color: brown;
+    border-bottom: 2px dotted brown;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #685d48;
+    color: beige;
+    text-align: center;
+    padding: 30px 50px;
+    margin-top: 20px;
+    clear: both;
+    font-size: 14px;
+}

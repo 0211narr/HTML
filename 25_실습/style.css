@@ -1,0 +1,78 @@
+body {
+    font-size: small;
+}
+
+#wrap {
+    width: 960px;
+    margin: 50px auto;
+}
+
+header h1 {
+    margin: 0;
+}
+
+aside {
+    background: url(../images/cocktail.gif) repeat-x;
+    border: 1px solid cadetblue;
+    width: 260px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    float: right;
+}
+
+aside h3 {
+    color: red;
+}
+
+section {
+    margin-right: 270px;
+    line-height: 30px;
+}
+
+section h2 {
+    color: cadetblue;
+}
+
+/*
+.our {
+    background: url(../images/background.gif) no-repeat;
+    background-color: #a2dbd6;
+    border: 3px dashed white;
+    font-family: Times;
+    font-style: italic;
+    line-height: 16px;
+    margin-left: 20px;
+    margin-right: 200px;
+    padding: 20px 20px 20px 90px;
+}
+*/
+
+section p:nth-child(4) {
+    font-family: Times;
+    font-style: italic;
+    line-height: 16px;
+    margin-left: 20px;
+    margin-right: 200px;
+    padding: 20px 20px 20px 90px;
+    background: url(../images/background.gif) no-repeat;
+    background-color: #a2dbd6;
+    border: 3px dashed white;
+}
+
+section ul li {
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+/* 
+3번째 p태그 
+폰트 Times 
+줄간격 16px
+왼쪽 바깥여백 20px
+오른쪽 바깥여백 200px
+안쪽여백 왼쪽 90px 나머지 20px
+*/
