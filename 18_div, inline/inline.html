@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Inline </title>
+    
+    <style>
+        
+        p {
+            width: 150px;
+            background: darkseagreen;
+            margin-left: 100px;
+        }
+        
+        .box1 { letter-spacing: 5px; }
+        .box2 { word-spacing: 15px; }
+        .box3 { 
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        } 
+        /*    
+            nowrap:포장하지않음. 글자가 벗어남
+            overflow: hidden; 벗어난 글자 감추기
+            text-overflow: ellipsis; 벗어난 글자 ...으로 
+        */
+        .box4 { line-height: 50px; }
+        .box5 { text-indent: 20px; }
+        .box6 { text-indent: -300px; }
+        
+        
+        
+        
+        
+        
+        table { 
+            /*border: 5px solid pink;*/
+            border-collapse: collapse;  /*겹치는 부분을 1px로 만들어줌*/
+        }
+        th { 
+            border: 2px solid deepskyblue;
+            height: 30px;
+        }
+        td { 
+            border: 2px solid black;
+            width: 200px;
+            height: 250px;
+        }
+        
+        .box7 { text-align: left; }
+        .box8 { text-align: justify; } /*justify 양 끝 맞춤*/
+        .box9 { text-align: right; }
+        
+        .box10 { vertical-align: top; }
+        .box11 { vertical-align: middle; }
+        .box12 { 
+            vertical-align: bottom;
+            line-height: 150px;
+        }
+        /* vertical-align이 적용되는건 table 구조의 칸들. 나머지는 적용 x */
+    
+    </style>
+    
+</head>
+
+<body>
+
+    <p class="box1">letter-spacing = 글자 사이 간격 (자간)</p>
+    <p class="box2">word-spacing = 단어 사이 간격 (공백)</p>
+    <p class="box3">white-space = 줄바꿈   속성</p>
+    <p class="box4">line-height = 줄간격 (행간)</p>
+    <p class="box5">text-indent = 들여쓰기(양수), 내어쓰기(음수)</p>
+    <p class="box6">text-indent = 들여쓰기(양수), 내어쓰기(음수)</p>
+    
+    <hr>
+    
+    <table>
+        <tr>
+            <th colspan="3">inline의 가로 정렬</th>
+        </tr>
+        
+        <tr>
+            <td class="box7">인천시 연수구</td>
+            <td class="box8">인천시 연수구</td>
+            <td class="box9">인천시 연수구</td>
+        </tr>
+        
+        <tr>
+            <th colspan="3">inline의 세로 정렬</th>
+        </tr>
+        
+        <tr>
+            <td class="box10">인천시 연수구</td>
+            <td class="box11">인천시 연수구</td>
+            <td class="box12">인천시 연수구</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
